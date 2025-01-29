@@ -1,5 +1,5 @@
 [
-    { "date": "2025-02-01", "time": "10:00 AM", "presenter": "Dr. Smith", "topic": "Gene Editing" },
-    { "date": "2025-02-08", "time": "10:00 AM", "presenter": "Dr. Johnson", "topic": "CRISPR Technology" }
-    // Add more entries as needed
+    { "date": "2025-01-30", "time": "09:30 AM", "presenter": "Prof. Alan Mark", "topic": "Intro to 2025" },
+    { "date": "2025-02-06", "time": "09:30 AM", "presenter": "TBA", "topic": "TBA" },
+    {"date":  "2025-06-05", "time": "09:30 AM", "presenter":  "Randomly decided", "topic":  "Roulette talk"}
 ]
