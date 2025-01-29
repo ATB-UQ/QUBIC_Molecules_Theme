@@ -1,0 +1,5 @@
+[
+    { "date": "2025-02-01", "time": "10:00 AM", "presenter": "Dr. Smith", "topic": "Gene Editing" },
+    { "date": "2025-02-08", "time": "10:00 AM", "presenter": "Dr. Johnson", "topic": "CRISPR Technology" }
+    // Add more entries as needed
+]
