@@ -1,6 +1,6 @@
 [
     { "date": "2025-01-30", "time": "09:30 AM", "presenter": "Prof. Alan Mark", "topic": "Intro to 2025" },
-    { "date": "2025-02-06", "time": "09:30 AM", "presenter": "TBA", "topic": "TBA" },
+    { "date": "2025-02-06", "time": "09:30 AM", "presenter": "Patrick Sutton", "topic": "TBA" },
     { "date": "2025-04-03", "time": "09:30 AM", "presenter": "Luke Ting-Williams", "topic": "TBA" },
     {"date":  "2025-06-05", "time": "09:30 AM", "presenter":  "Randomly decided", "topic":  "Roulette talk"}
 ]
