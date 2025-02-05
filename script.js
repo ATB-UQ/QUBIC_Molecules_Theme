@@ -3,9 +3,31 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(schedule => {
             const tbody = document.querySelector('#schedule tbody');
+            const thead = document.querySelector('#schedule thead');
             const today = new Date();
             const endDate = new Date('2025-12-05');
             const thursdays = [];
+
+            // Define the columns to be rendered and their display names
+            const columns = {
+                date: 'Date',
+                time: 'Time',
+                presenter: 'Presenter',
+                topic: 'Topic',
+                chair: 'Chair'
+            };
+
+            // Clear existing headers
+            thead.innerHTML = '';
+
+            // Generate table headers
+            const headerRow = document.createElement('tr');
+            Object.values(columns).forEach(columnName => {
+                const th = document.createElement('th');
+                th.textContent = columnName;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
 
             // Generate all Thursdays until December 5th
             let current = new Date(today);
@@ -48,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Render the sorted schedule
             combinedSchedule.forEach(entry => {
+                if (entry.status === 'CTCMS') {
+                    return; // Skip rendering this entry
+                }
+
                 const row = document.createElement('tr');
                 const date = new Date(entry.date);
                 let displayDate = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
@@ -60,12 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 const formattedEntry = {
-                    ...entry,
-                    date: displayDate
+                    date: displayDate,
+                    time: entry.time,
+                    presenter: entry.presenter,
+                    topic: entry.topic,
+                    chair: entry.chair
                 };
 
-                Object.entries(formattedEntry).forEach(([key, text]) => {
+                Object.entries(columns).forEach(([key, columnName]) => {
                     const cell = document.createElement('td');
+                    const text = formattedEntry[key];
+
                     if (key === 'presenter' && text === 'Book this Slot!') {
                         const link = document.createElement('a');
                         link.href = 'mailto:c.macfarlane@student.uq.edu.au';
@@ -74,6 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         cell.textContent = text;
                     }
+
+                    if (entry.status === 'pending' && (key === 'presenter' || key === 'topic' || key === 'chair')) {
+                        cell.style.fontStyle = 'italic';
+                        cell.style.color = 'grey';
+                    }
+
                     row.appendChild(cell);
                 });
                 tbody.appendChild(row);
