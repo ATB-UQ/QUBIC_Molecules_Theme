@@ -3,7 +3,7 @@
     { "date": "2025-02-06", "time": "09:30 AM", "presenter": "Patrick Sutton", "topic": "TBA", "chair":  "Callum Macfarlane"},
     { "date": "2025-02-13", "time": "09:30 AM", "presenter": "Ada Quinn", "topic": "Polymer build tool", "chair": "Patrick Sutton" },
     { "date": "2025-02-20", "time": "09:30 AM", "presenter": "Ada Quinn", "topic": "", "status": "CTCMS", "chair": "Ada Quinn" },
-    { "date": "2025-02-27", "time": "09:30 AM", "presenter": "Yumeng Hao", "topic": "TBA", "status": "pending", "chair": "Ada Quinn" },
+    { "date": "2025-02-27", "time": "09:30 AM", "presenter": "Rangika Munaweera", "topic": "TBA", "status": "pending", "chair": "Ada Quinn" },
     { "date": "2025-03-06", "time": "09:30 AM", "presenter": "Abhay Sharma", "topic": "TBA", "status": "pending", "chair": "Yumeng Hao" },
     { "date": "2025-03-13", "time": "09:30 AM", "presenter": "Luna Morrow", "topic": "TBA", "status": "pending", "chair": "Angus Macdonald" },
     { "date": "2025-03-20", "time": "09:30 AM", "presenter": "Angus Macdonald", "topic": "TBA", "status": "CTCMS", "chair": "Patrick Sutton" },
