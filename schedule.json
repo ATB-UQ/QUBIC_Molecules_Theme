@@ -43,14 +43,14 @@
         "status": "",
         "chair": "Yumeng Hao"
     },
-    {
-        "date": "2025-03-20",
-        "time": "09:30 AM",
-        "presenter": "Yao Frank Fu",
-        "topic": "TBA",
-        "status": "",
-        "chair": "Angus Macdonald"
-    },
+//    {
+//        "date": "2025-03-20",
+//        "time": "09:30 AM",
+//        "presenter": "Yao Frank Fu",
+//        "topic": "TBA",
+//        "status": "",
+//        "chair": "Angus Macdonald"
+//    },
     {
         "date": "2025-03-27",
         "time": "09:30 AM",
@@ -60,7 +60,7 @@
         "chair": "Patrick Sutton"
     },
     {
-        "date": "2025-04-03",
+        "date": "2025-03-20",
         "time": "09:30 AM",
         "presenter": "Billy Williams-Noonan",
         "topic": "TBA",
