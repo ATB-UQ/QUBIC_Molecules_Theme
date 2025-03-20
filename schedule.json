@@ -54,9 +54,9 @@
     {
         "date": "2025-03-20",
         "time": "09:30 AM",
-        "presenter": "Billy Williams-Noonan",
+        "presenter": "Abhay Sharma & Callum Macfarlane",
         "topic": "TBA",
-        "status": "pending",
+        "status": "",
         "chair": "Patrick Sutton"
     },
     {
@@ -65,6 +65,14 @@
         "presenter": "Luke Ting-Williams",
         "topic": "Honours research topic",
         "chair": "Billy Williams-Noonan"
+    },
+    {
+        "date": "2025-04-10",
+        "time": "09:30 AM",
+        "presenter": "Billy Williams-Noonan",
+        "topic": "Honours research topic",
+        "chair": "Luke Ting-Williams",
+        "status": "pending"
     },
     {
         "date": "2025-04-17",
