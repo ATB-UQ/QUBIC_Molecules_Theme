@@ -75,7 +75,7 @@
         "status": "pending"
     },
     {
-        "date": "2025-04-17",
+        "date": "2025-04-24",
         "time": "09:30 AM",
         "presenter": "Angus Macdonald",
         "topic": "TBA",
@@ -83,7 +83,15 @@
         "status": "pending"
     },
     {
-        "date": "2025-04-24",
+        "date": "2025-04-01",
+        "time": "09:30 AM",
+        "presenter": "Frank Fu",
+        "topic": "TBA",
+        "chair": "Angus Macdonald",
+        "status": "pending"
+    },
+    {
+        "date": "2025-05-22",
         "time": "09:30 AM",
         "presenter": "Sol Roche",
         "topic": "TBA",
