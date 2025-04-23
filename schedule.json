@@ -78,17 +78,25 @@
         "date": "2025-04-24",
         "time": "09:30 AM",
         "presenter": "Angus Macdonald",
-        "topic": "TBA",
+        "topic": "Lipid modulation and substrate binding energies of ABCG2 in multi-drug resistance prostate cancer",
         "chair": "Abay Sharma",
-        "status": "pending"
+        "status": ""
     },
     {
-        "date": "2025-04-01",
+        "date": "2025-05-01",
         "time": "09:30 AM",
         "presenter": "Frank Fu",
         "topic": "TBA",
         "chair": "Angus Macdonald",
-        "status": "pending"
+        "status": ""
+    },
+    {
+        "date": "2025-05-08",
+        "time": "09:30 AM",
+        "presenter": "Callum Macfarlane",
+        "topic": "Paper review of \"A comprehensive framework to simulate real-time chemical dynamics on a fault-tolerant quantum computer\"",
+        "chair": "Abhay Sharma",
+        "status": ""
     },
     {
         "date": "2025-05-22",
