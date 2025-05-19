@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #72a9e0;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -29,7 +29,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #72a9e0;
     color: white;
 }
 
@@ -40,7 +40,7 @@ tr:nth-child(even) {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #4CAF50;
+    background-color: #72a9e0;
     color: white;
     position: fixed;
     width: 100%;

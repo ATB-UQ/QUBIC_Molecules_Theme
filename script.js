@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (key === 'presenter' && text === 'Book this Slot!') {
                         const link = document.createElement('a');
-                        link.href = 'mailto:c.macfarlane@student.uq.edu.au';
+                        link.href = 'mailto:m.stroet@uq.edu.au';
                         link.textContent = text;
                         cell.appendChild(link);
                     } else {
