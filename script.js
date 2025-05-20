@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 date: 'Date',
                 time: 'Time',
                 presenter: 'Presenter',
-                topic: 'Title',
+                title: 'Title',
                 chair: 'Chair'
             };
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     date: displayDate,
                     time: entry.time,
                     presenter: entry.presenter,
-                    topic: entry.topic,
+                    title: entry.title,
                     chair: entry.chair
                 };
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const text = formattedEntry[key];
                     cell.textContent = text;
 
-                    if (entry.status === 'pending' && (key === 'presenter' || key === 'topic' || key === 'chair')) {
+                    if (entry.status === 'pending' && (key === 'presenter' || key === 'title' || key === 'chair')) {
                         cell.style.fontStyle = 'italic';
                         cell.style.color = 'grey';
                     }
