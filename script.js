@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const today = new Date();
             const startDate = new Date('2025-06-05');
             const endDate = new Date('2025-12-05');
-            const thursdays = [];
 
             // Define the columns to be rendered and their display names
             const columns = {
@@ -30,51 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             thead.appendChild(headerRow);
 
-            // Generate all Thursdays until December 5th
-            let current = startDate;
-            current.setDate(current.getDate() + (4 - current.getDay() + 28) % 28); // Set to first Thursday of the month
-            while (current <= endDate) {
-                thursdays.push(new Date(current));
-                current.setDate(current.getDate() + 28);
-            }
-
             // Convert schedule dates to a Set for quick lookup
             const scheduleDates = new Set(schedule.map(entry => new Date(entry.date).toDateString()));
 
             // Combine schedule entries and default entries
             const combinedSchedule = [...schedule];
 
-            thursdays.forEach(date => {
-                const dateString = date.toDateString();
-                let displayDate = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-
-                // Check if the date is tomorrow
-                const tomorrow = new Date(today);
-                tomorrow.setDate(today.getDate() + 1);
-                if (date.toDateString() === tomorrow.toDateString()) {
-                    displayDate = 'Tomorrow';
-                }
-
-                // Check if the date is in the schedule
-                if (!scheduleDates.has(dateString)) {
-                    combinedSchedule.push({
-                        date: dateString,
-                        time: '9:30 AM',
-                        presenter: 'TBA',
-                        title: 'TBA',
-                        chair: 'Martin Stroet'
-                    });
-                }
-            });
-
             // Sort combined schedule by date
             combinedSchedule.sort((a, b) => new Date(a.date) - new Date(b.date));
 
             // Render the sorted schedule
             combinedSchedule.forEach(entry => {
-                if (entry.status === 'CTCMS') {
-                    return; // Skip rendering this entry
-                }
 
                 const row = document.createElement('tr');
                 const date = new Date(entry.date);
