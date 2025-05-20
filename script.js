@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         date: dateString,
                         time: '9:30 AM',
                         presenter: 'TBA',
-                        topic: 'TBA'
+                        title: 'TBA',
+                        chair: 'Martin Stroet'
                     });
                 }
             });
