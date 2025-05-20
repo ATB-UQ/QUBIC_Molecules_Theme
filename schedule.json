@@ -1,1 +1,44 @@
-[]
+[
+  {
+        "date": "2025-06-05",
+        "time": "09:30 AM",
+        "presenter": "TBA",
+        "title": "",
+        "chair": "Martin Stroet"
+    },
+  {
+        "date": "2025-07-03",
+        "time": "09:30 AM",
+        "presenter": "TBA",
+        "title": "",
+        "chair": "Martin Stroet"
+    },
+  {
+        "date": "2025-08-07",
+        "time": "09:30 AM",
+        "presenter": "QUBIC Joint Themes Workshop",
+        "title": "NA",
+        "chair": "NA"
+    },
+  {
+        "date": "2025-09-04",
+        "time": "09:30 AM",
+        "presenter": "TBA",
+        "title": "",
+        "chair": "Martin Stroet"
+    },
+  {
+        "date": "2025-10-02",
+        "time": "09:30 AM",
+        "presenter": "TBA",
+        "title": "",
+        "chair": "Martin Stroet"
+    },
+  {
+        "date": "2025-11-06",
+        "time": "09:30 AM",
+        "presenter": "TBA",
+        "title": "",
+        "chair": "Martin Stroet"
+    },
+]
