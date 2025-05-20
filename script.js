@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Generate all Thursdays until December 5th
             let current = startDate;
-            current.setDate(current.getDate() + (4 - current.getDay() + 7) % 7); // Set to first Thursday of the month
+            current.setDate(current.getDate() + (4 - current.getDay() + 7) % 28); // Set to first Thursday of the month
             while (current <= endDate) {
                 thursdays.push(new Date(current));
                 current.setDate(current.getDate() + 28);
