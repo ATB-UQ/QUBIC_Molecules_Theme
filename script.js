@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 date: 'Date',
                 time: 'Time',
                 presenter: 'Presenter',
-                topic: 'Topic',
+                topic: 'Title',
                 chair: 'Chair'
             };
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     combinedSchedule.push({
                         date: dateString,
                         time: '9:30 AM',
-                        presenter: 'Book this Slot!',
+                        presenter: 'TBA',
                         topic: 'TBA'
                     });
                 }
@@ -97,15 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Object.entries(columns).forEach(([key, columnName]) => {
                     const cell = document.createElement('td');
                     const text = formattedEntry[key];
-
-                    if (key === 'presenter' && text === 'Book this Slot!') {
-                        const link = document.createElement('a');
-                        link.href = 'mailto:m.stroet@uq.edu.au';
-                        link.textContent = text;
-                        cell.appendChild(link);
-                    } else {
-                        cell.textContent = text;
-                    }
+                    cell.textContent = text;
 
                     if (entry.status === 'pending' && (key === 'presenter' || key === 'topic' || key === 'chair')) {
                         cell.style.fontStyle = 'italic';
