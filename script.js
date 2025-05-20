@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const tbody = document.querySelector('#schedule tbody');
             const thead = document.querySelector('#schedule thead');
             const today = new Date();
+            const startDate = new Date('2025-06-05');
             const endDate = new Date('2025-12-05');
             const thursdays = [];
 
@@ -30,11 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
             thead.appendChild(headerRow);
 
             // Generate all Thursdays until December 5th
-            let current = new Date(today);
-            current.setDate(current.getDate() + (4 - current.getDay() + 7) % 7); // Set to next Thursday
+            let current = startDate;
+            current.setDate(current.getDate() + (4 - current.getDay() + 7) % 7); // Set to first Thursday of the month
             while (current <= endDate) {
                 thursdays.push(new Date(current));
-                current.setDate(current.getDate() + 7);
+                current.setDate(current.getDate() + 28);
             }
 
             // Convert schedule dates to a Set for quick lookup
