@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Object.entries(columns).forEach(([key, columnName]) => {
                     const cell = document.createElement('td');
                     const text = formattedEntry[key];
-                    cell.textContent = text;
+                    cell.innerHTML = text;
 
                     if (entry.status === 'pending' && (key === 'presenters' || key === 'titles' || key === 'chair')) {
                         cell.style.fontStyle = 'italic';
