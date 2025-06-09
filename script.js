@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const columns = {
                 date: 'Date',
                 time: 'Time',
-                presenter: 'Presenter',
-                title: 'Title',
+                presenter: 'Presenters',
+                titles: 'Titles',
                 chair: 'Chair'
             };
 
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const formattedEntry = {
                     date: displayDate,
                     time: entry.time,
-                    presenter: entry.presenter,
-                    title: entry.title,
+                    presenter: entry.presenters,
+                    titles: entry.titles,
                     chair: entry.chair
                 };
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const text = formattedEntry[key];
                     cell.textContent = text;
 
-                    if (entry.status === 'pending' && (key === 'presenter' || key === 'title' || key === 'chair')) {
+                    if (entry.status === 'pending' && (key === 'presenters' || key === 'titles' || key === 'chair')) {
                         cell.style.fontStyle = 'italic';
                         cell.style.color = 'grey';
                     }
