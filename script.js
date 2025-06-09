@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const columns = {
                 date: 'Date',
                 time: 'Time',
-                presenter: 'Presenters',
+                presenters: 'Presenters',
                 titles: 'Titles',
                 chair: 'Chair'
             };
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const formattedEntry = {
                     date: displayDate,
                     time: entry.time,
-                    presenter: entry.presenters,
+                    presenters: entry.presenters,
                     titles: entry.titles,
                     chair: entry.chair
                 };
