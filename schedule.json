@@ -24,14 +24,14 @@
         "date": "2025-09-04",
         "time": "09:30 AM",
         "presenters": "Jeffrey Reimers",
-        "titles": "The relationship between classical and quantum mechanics, and its exploitation to make semiclassical solutions to protein quantum dynamics",
+        "titles": "<a href='https://github.com/ATB-UQ/QUBIC_Molecules_Theme/raw/refs/heads/main/data/Quantum_intro_02.pdf'> Part 1: The relationship between classical and quantum mechanics, and its exploitation to make semiclassical solutions to protein quantum dynamics</a>",
         "chair": "Martin Stroet"
     },
   {
         "date": "2025-10-02",
         "time": "09:30 AM",
-        "presenters": "TBA",
-        "titles": "",
+        "presenters": "Jeffrey Reimers",
+        "titles": "Part 2: The relationship between classical and quantum mechanics, and its exploitation to make semiclassical solutions to protein quantum dynamics",
         "chair": "Martin Stroet"
     },
   {
